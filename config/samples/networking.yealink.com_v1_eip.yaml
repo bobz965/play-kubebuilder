@@ -1,0 +1,6 @@
+apiVersion: networking.yealink.com.networking.yealink.com/v1
+kind: Eip
+metadata:
+  name: eip-sample
+spec:
+  # TODO(user): Add fields here

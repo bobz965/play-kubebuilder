@@ -1,0 +1,24 @@
+# permissions for end users to edit fips.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: fip-editor-role
+rules:
+- apiGroups:
+  - networking.yealink.com.networking.yealink.com
+  resources:
+  - fips
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - networking.yealink.com.networking.yealink.com
+  resources:
+  - fips/status
+  verbs:
+  - get

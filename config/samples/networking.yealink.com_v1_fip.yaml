@@ -1,0 +1,6 @@
+apiVersion: networking.yealink.com.networking.yealink.com/v1
+kind: Fip
+metadata:
+  name: fip-sample
+spec:
+  # TODO(user): Add fields here
